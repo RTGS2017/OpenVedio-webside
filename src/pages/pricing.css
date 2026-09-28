@@ -1,0 +1,42 @@
+.price-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.price-stack + .price-stack,
+.mode-grid {
+  margin-top: 0;
+}
+
+.mode-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.mode-grid > * {
+  min-width: 0;
+}
+
+.price-block {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.price-block h2 {
+  max-width: 16em;
+}
+
+.rule-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.rule-list li + li {
+  margin-top: 0.55rem;
+}
+
+@media (min-width: 768px) {
+  .mode-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
